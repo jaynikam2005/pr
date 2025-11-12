@@ -1,0 +1,5 @@
+sudo sh -c 'echo "blacklist usb-storage" >> /etc/modprobe.d/blacklist-usb.conf && update-initramfs -u'
+lock
+
+sudo rm /etc/modprobe.d/blacklist-usb.conf && update-initramfs -u
+unlock
